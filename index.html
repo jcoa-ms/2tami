@@ -6,21 +6,18 @@
   <title>第2ターミナルまでの行き方</title>
   <style>
 
-    *{
-      margin:0;padding:0;
-    }
-
     html {
-      background-color: #f9f9f9;
+      background-color: white;
     }
 
     body {
       padding: 3%;
       font-family: "Meiryo UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN","Yu Gothic UI", "MS PGothic", sans-serif;
+      text-align: center;
     }
 
     img {
-      width: 100%;
+      margin-bottom: 5%;
     }
 
     iframe {
@@ -28,25 +25,35 @@
       height: 400px;
     }
 
-    .block {
-      width: 60%;
-      margin:20px auto;
-      text-align: center;
-      font-size: large;
+    a {
+      font-size: 3vw;
+      font-weight: bold;
+    }
+
+    div {
+      margin-bottom: 10%;
+      border-collapse: collapse;
+
     }
 
   </style>
   </head>
 
   <body>
-    <img src="2tamiroute.png" alt="地下連絡通路" width="100%">
-    <img src="bustitle.png" style="vertical-align:middle;" alt="無料連絡バスタイトル" width="100%"><br>
-    <img src="busstation.png" alt="無料連絡バス停" width="100%">
-    <iframe src="https://tokyo-haneda.com/site_resource/information/pdf/000010912.pdf" alt="無料連絡バス時刻表" width="100%"></iframe>
+    <div class="walk">
+      <a>地下連絡通路</a><br>
+      <img src="2tami1.png" alt="地下連絡通路地図" width="100%">
+      <img src="2tami2.png" alt="地下連絡通路写真" width="60%">
+    </div>
 
-    <div class="block">
-      <p>「無料循環バス時刻表」の読み取りはこちら↓</p>
-      <img src="qr-freebus.png" alt="時刻表バーコード">
+    <div class="bus">
+      <a>無料連絡バス乗り場</a><br>
+      <p><br>到着１F</p>
+      <img src="busstation.png" alt="無料連絡バス停" width="100%">
+      <img src="2tami3.png" alt="バスルート" width="50%">
+      <iframe src="https://tokyo-haneda.com/site_resource/information/pdf/000010912.pdf" alt="無料連絡バス時刻表"></iframe><br>
+      <p>「無料連絡バス時刻表」の読み取りはこちら<br>↓</p>
+      <img src="qr-freebus.png" alt="時刻表バーコード" width="50%">
     </div>
 
   </body>
